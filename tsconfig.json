@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "typeRoots": ["node_modules/@types", "node_modules/playwright-core/types"],
+      "types": ["node", "playwright-core"],
+      "lib": ["es2016"],
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "skipLibCheck": true,
+  },
+  "exclude": [
+      "node_modules",
+  ]
+}

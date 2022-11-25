@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "ms-playwright.playwright",
+    "steoates.autoimport",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
