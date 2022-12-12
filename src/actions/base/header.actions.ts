@@ -1,7 +1,7 @@
-import { BrowserContext, Page } from "@playwright/test";
+import { BrowserContext, Page } from '@playwright/test';
 
-import HeaderPage from "../../pages/base/header.page";
-import BaseActions from "./base.actions";
+import HeaderPage from '../../pages/base/header.page';
+import BaseActions from './base.actions';
 
 export default class HeaderActions extends BaseActions {
   headerPage: HeaderPage;

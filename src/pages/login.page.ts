@@ -1,4 +1,4 @@
-import BasePage from "./base/base.page";
+import BasePage from './base/base.page';
 
 class LoginPage extends BasePage {
   get usernameInput() {

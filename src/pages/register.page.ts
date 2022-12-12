@@ -1,4 +1,4 @@
-import BasePage from "./base/base.page";
+import BasePage from './base/base.page';
 
 class RegisterPage extends BasePage {
   get firstNameInput() {
@@ -22,7 +22,7 @@ class RegisterPage extends BasePage {
   }
 
   get createYourFreeAccountBtn() {
-    return this.page.locator(".button_primary");
+    return this.page.locator('.button_primary');
   }
 }
 

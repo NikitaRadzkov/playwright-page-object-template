@@ -1,4 +1,4 @@
-import { BrowserContext, Page } from "@playwright/test";
+import { BrowserContext, Page } from '@playwright/test';
 
 const map = new Map();
 
@@ -16,7 +16,7 @@ export default class BasePage {
   protected locatorWrapper(isNewPage = false) {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    const page: Page = isNewPage ? this.Map.get("newPage") : this.page;
+    const page: Page = isNewPage ? this.Map.get('newPage') : this.page;
     return page;
   }
 }

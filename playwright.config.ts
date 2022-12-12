@@ -1,6 +1,6 @@
-import type { PlaywrightTestConfig } from "@playwright/test";
-import { devices } from "@playwright/test";
-import { ENVS } from "./src/utils/env.utils";
+import type { PlaywrightTestConfig } from '@playwright/test';
+import { devices } from '@playwright/test';
+import { ENVS } from './src/utils/env.utils';
 
 /**
  * Read environment variables from file.
@@ -12,7 +12,7 @@ import { ENVS } from "./src/utils/env.utils";
  * See https://playwright.dev/docs/test-configuration.
  */
 const config: PlaywrightTestConfig = {
-  testDir: "./src/tests",
+  testDir: './src/tests',
   /* Maximum time one test can run for. */
   timeout: 30 * 1000,
   expect: {
@@ -23,8 +23,8 @@ const config: PlaywrightTestConfig = {
     timeout: 20000,
     toHaveScreenshot: {
       maxDiffPixelRatio: 0.1,
-      animations: "disabled",
-    },
+      animations: 'disabled'
+    }
   },
   /* Run tests in files in parallel */
   fullyParallel: false,
@@ -35,7 +35,7 @@ const config: PlaywrightTestConfig = {
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: "html",
+  reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
@@ -47,28 +47,28 @@ const config: PlaywrightTestConfig = {
     baseURL: ENVS.dev,
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: "on-first-retry",
+    trace: 'on-first-retry',
 
     viewport: { width: 1920, height: 1080 },
     ignoreHTTPSErrors: true,
-    bypassCSP: true,
+    bypassCSP: true
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
-      name: "chromium",
+      name: 'chromium',
       use: {
-        ...devices["Desktop Chrome"],
-      },
+        ...devices['Desktop Chrome']
+      }
     },
 
     {
-      name: "webkit",
+      name: 'webkit',
       use: {
-        ...devices["Desktop Safari"],
-      },
-    },
+        ...devices['Desktop Safari']
+      }
+    }
 
     /* Test against mobile viewports. */
     // {
@@ -97,7 +97,7 @@ const config: PlaywrightTestConfig = {
     //     channel: 'chrome',
     //   },
     // },
-  ],
+  ]
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */
   // outputDir: 'test-results/',

@@ -1,9 +1,9 @@
-import { BrowserContext, expect, Page } from "@playwright/test";
+import { BrowserContext, expect, Page } from '@playwright/test';
 
-import { Utils } from "../../types/utils.types";
-import routeUtils from "../../utils/routes.utils";
-import NavigationSectionPage from "../../pages/base/navigation-section.page";
-import BaseActions from "./base.actions";
+import { Utils } from '../../types/utils.types';
+import routeUtils from '../../utils/routes.utils';
+import NavigationSectionPage from '../../pages/base/navigation-section.page';
+import BaseActions from './base.actions';
 
 class NavigationSectionActions extends BaseActions {
   navigationSectionPage: NavigationSectionPage;

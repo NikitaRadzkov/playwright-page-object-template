@@ -1,5 +1,5 @@
-import { BrowserContext, Page } from "@playwright/test";
-import BasePage from "./base.page";
+import { BrowserContext, Page } from '@playwright/test';
+import BasePage from './base.page';
 
 class NavigationSection extends BasePage {
   constructor(page: Page, context: BrowserContext) {
@@ -7,23 +7,23 @@ class NavigationSection extends BasePage {
   }
 
   get pagesBtn() {
-    return this.page.locator(".icon-design");
+    return this.page.locator('.icon-design');
   }
 
   get dataBtn() {
-    return this.page.locator(".icon-data");
+    return this.page.locator('.icon-data');
   }
 
   get appSettingsBtn() {
-    return this.page.locator(".icon-dashboard");
+    return this.page.locator('.icon-dashboard');
   }
 
   get signinAndSingupBtn() {
-    return this.page.locator(".icon-signin");
+    return this.page.locator('.icon-signin');
   }
 
   get automationsBtn() {
-    return this.page.locator(".icon-workflow");
+    return this.page.locator('.icon-workflow');
   }
 }
 

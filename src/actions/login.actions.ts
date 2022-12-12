@@ -1,7 +1,7 @@
-import { BrowserContext, expect, Page } from "@playwright/test";
+import { BrowserContext, expect, Page } from '@playwright/test';
 
-import LoginPage from "../pages/login.page";
-import BaseActions from "./base/base.actions";
+import LoginPage from '../pages/login.page';
+import BaseActions from './base/base.actions';
 
 class LoginActions extends BaseActions {
   loginPage: LoginPage;

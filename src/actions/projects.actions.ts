@@ -1,7 +1,7 @@
-import { BrowserContext, Page } from "@playwright/test";
+import { BrowserContext, Page } from '@playwright/test';
 
-import ProjectsPage from "../pages/projects.page";
-import BaseActions from "./base/base.actions";
+import ProjectsPage from '../pages/projects.page';
+import BaseActions from './base/base.actions';
 
 class RegisterActions extends BaseActions {
   projectsPage: ProjectsPage;

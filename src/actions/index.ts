@@ -1,10 +1,10 @@
-import { BrowserContext, Page } from "@playwright/test";
+import { BrowserContext, Page } from '@playwright/test';
 
-import BaseActions from "./base/base.actions";
-import HeaderActions from "./base/header.actions";
-import NavigationSectionActions from "./base/navigation-section.actions";
-import LoginActions from "./login.actions";
-import RegisterActions from "./register.actions";
+import BaseActions from './base/base.actions';
+import HeaderActions from './base/header.actions';
+import NavigationSectionActions from './base/navigation-section.actions';
+import LoginActions from './login.actions';
+import RegisterActions from './register.actions';
 
 export default class App {
   base: BaseActions;

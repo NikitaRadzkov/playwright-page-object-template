@@ -1,7 +1,7 @@
-import { BrowserContext, expect, Page } from "@playwright/test";
+import { BrowserContext, expect, Page } from '@playwright/test';
 
-import RegisterPage from "../pages/register.page";
-import BaseActions from "./base/base.actions";
+import RegisterPage from '../pages/register.page';
+import BaseActions from './base/base.actions';
 
 interface RegisterData {
   firstName: string;
