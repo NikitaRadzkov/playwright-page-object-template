@@ -21,6 +21,6 @@
     "object-curly-newline": "off",
     "@typescript-eslint/no-namespace": "off",
     "max-len": ["warn", { "code": 120 }],
-    "prettier/prettier": ["warn", { "singleQuote": true, "semi": true }]
+    "prettier/prettier": ["warn"]
   }
 }
