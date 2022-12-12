@@ -1,4 +1,4 @@
-import { expect, Page } from "@playwright/test";
+import { BrowserContext, expect, Page } from "@playwright/test";
 
 import LoginPage from "../pages/login.page";
 import BaseActions from "./base/base.actions";
@@ -6,9 +6,9 @@ import BaseActions from "./base/base.actions";
 class LoginActions extends BaseActions {
   loginPage: LoginPage;
 
-  constructor(page: Page) {
-    super(page);
-    this.loginPage = new LoginPage(page);
+  constructor(page: Page, context: BrowserContext) {
+    super(page, context);
+    this.loginPage = new LoginPage(page, context);
   }
 
   async enterUsername(username: string) {

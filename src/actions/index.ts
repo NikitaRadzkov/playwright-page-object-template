@@ -1,4 +1,4 @@
-import { Page } from "@playwright/test";
+import { BrowserContext, Page } from "@playwright/test";
 
 import BaseActions from "./base/base.actions";
 import HeaderActions from "./base/header.actions";
@@ -13,11 +13,11 @@ export default class App {
   register: RegisterActions;
   navigation: NavigationSectionActions;
 
-  constructor(page: Page) {
-    this.base = new BaseActions(page);
-    this.header = new HeaderActions(page);
-    this.login = new LoginActions(page);
-    this.register = new RegisterActions(page);
-    this.navigation = new NavigationSectionActions(page);
+  constructor(page: Page, context: BrowserContext) {
+    this.base = new BaseActions(page, context);
+    this.header = new HeaderActions(page, context);
+    this.login = new LoginActions(page, context);
+    this.register = new RegisterActions(page, context);
+    this.navigation = new NavigationSectionActions(page, context);
   }
 }

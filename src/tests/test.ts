@@ -7,8 +7,8 @@ interface IApp {
 }
 
 const test = base.extend<IApp>({
-  app: async ({ page }, use) => {
-    const app = new App(page);
+  app: async ({ page, context }, use) => {
+    const app = new App(page, context);
     use(app);
   },
 });
