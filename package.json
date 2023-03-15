@@ -10,17 +10,9 @@
     "lint:run": "eslint \"./**\" --max-warnings=0",
     "lint:fix": "eslint \"./**\" --fix --max-warnings=0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@gitlab.com/jet-admin/jet-tests.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://gitlab.com/jet-admin/jet-tests/issues"
-  },
-  "homepage": "https://gitlab.com/jet-admin/jet-tests#readme",
   "devDependencies": {
     "@playwright/test": "^1.28.1",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
