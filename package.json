@@ -1,5 +1,5 @@
 {
-  "name": "jet-tests",
+  "name": "playwright-page-object-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
